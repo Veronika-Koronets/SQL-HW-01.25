@@ -34,9 +34,9 @@ SELECT * from lekarstva;
 ![image](https://github.com/user-attachments/assets/cf18591e-65ad-44ac-b725-a93d8f7817bd)
 
 
-## ИЗМЕНИТЬ СТРУКТУРУ ТАБЛИЦЫ
+# ИЗМЕНИТЬ СТРУКТУРУ ТАБЛИЦЫ
 
-###добавить новую колонку "seriya"
+#добавить новую колонку "seriya"
 ```
 ALTER TABLE lekarstva add seriya char(25);
 ```
