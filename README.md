@@ -32,19 +32,27 @@ SELECT * from lekarstva;
 
 
 ## ИЗМЕНИТЬ СТРУКТУРУ ТАБЛИЦЫ
-##добавить новую колонку "seriya"
-ALTER TABLE lekarstva add seriya char(25);
 
-##удалить колонку
+###добавить новую колонку "seriya"
+```
+ALTER TABLE lekarstva add seriya char(25);
+```
+```
+SELECT * from lekarstva;
+```
+![image](https://github.com/user-attachments/assets/4892a71c-dbb3-49fe-85c7-b485a9f19a19)
+
+###удалить колонку
 ALTER table lekarstva drop number;
 
-##переименовать колонку
+###переименовать колонку
+
 alter table lekarstva rename column lek_forma to forma;
 
-##изменить тип данных
+###изменить тип данных
 ##alter TABLE lekarstva modify id char(25);
 
-##посмотреть тип данных 
+###посмотреть тип данных 
 ##describe lekarstva;
 
 
