@@ -22,8 +22,12 @@ INSERT INTO lekarstva values
 
 
 ## УДАЛИТЬ ТАБЛИЦУ
-`` drop table lekarstva;``
-##SELECT * from lekarstva;
+```
+drop table lekarstva;
+```
+```
+SELECT * from lekarstva;
+```
 
 ## ИЗМЕНИТЬ СТРУКТУРУ ТАБЛИЦЫ
 ##добавить новую колонку "seriya"
