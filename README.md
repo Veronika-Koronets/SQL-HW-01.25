@@ -15,7 +15,9 @@ INSERT INTO lekarstva values
 (9, 'Omeprazole', 'tabletky', 'GastroAid', 200, 18),
 (10, 'Simvastatin', 'tabletky', 'CardioMed', 160, 22);
 ```
-##SELECT * from lekarstva;
+```
+SELECT * from lekarstva;
+```
 ![image](https://github.com/user-attachments/assets/2ed03c35-e91a-46dc-af04-cf215d5188fb)
 ![image](https://github.com/user-attachments/assets/20d30b8a-1512-4615-842d-0bbdf48d00e9)
 
