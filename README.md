@@ -22,7 +22,7 @@ INSERT INTO lekarstva values
 
 
 ## УДАЛИТЬ ТАБЛИЦУ
-##drop table lekarstva;
+`` drop table lekarstva;``
 ##SELECT * from lekarstva;
 
 ## ИЗМЕНИТЬ СТРУКТУРУ ТАБЛИЦЫ
