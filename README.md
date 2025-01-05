@@ -1,6 +1,7 @@
 # SQL-HW-04.01.25
 
 ## СОЗДАТЬ ТАБЛИЦУ
+```
 CREATE TABLE lekarstva (id int, name char(25), lek_forma char(25), producer char(25), price int, number int, primary key (id));
 INSERT INTO lekarstva values
  (1, 'Paracetamol', 'tabletky', 'Pharma', 100, 50),
@@ -13,8 +14,11 @@ INSERT INTO lekarstva values
 (8, 'Diphenhydramine', 'kapsuly', 'HealthFirst', 130, 35),
 (9, 'Omeprazole', 'tabletky', 'GastroAid', 200, 18),
 (10, 'Simvastatin', 'tabletky', 'CardioMed', 160, 22);
-
+```
 ##SELECT * from lekarstva;
+![image](https://github.com/user-attachments/assets/2ed03c35-e91a-46dc-af04-cf215d5188fb)
+
+
 ## УДАЛИТЬ ТАБЛИЦУ
 ##drop table lekarstva;
 ##SELECT * from lekarstva;
