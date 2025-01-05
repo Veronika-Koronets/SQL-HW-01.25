@@ -46,18 +46,28 @@ SELECT * from lekarstva;
 ![image](https://github.com/user-attachments/assets/4892a71c-dbb3-49fe-85c7-b485a9f19a19)
 
 ### удалить колонку
+```
 ALTER table lekarstva drop number;
-
+```
+```
+SELECT * from lekarstva;
+```
 ###переименовать колонку
-
+```
 alter table lekarstva rename column lek_forma to forma;
+```
+```
+SELECT * from lekarstva;
+```
 
 ### изменить тип данных
-##alter TABLE lekarstva modify id char(25);
+```
+alter TABLE lekarstva modify id char(25);
+```
 
 ###посмотреть тип данных 
-##describe lekarstva;
-
+```describe lekarstva;
+```
 
 ## ДОБАВИТЬ ДАННЫЕ
 insert into lekarstva VALUES (11, 'loperamid', 'kapsuly', 'Borisov', 12, 'SW020324');
