@@ -25,6 +25,7 @@ INSERT INTO lekarstva values
 ```
 drop table lekarstva;
 ```
+
 ```
 SELECT * from lekarstva;
 ```
