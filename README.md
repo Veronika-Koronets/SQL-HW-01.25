@@ -17,6 +17,7 @@ INSERT INTO lekarstva values
 ```
 ##SELECT * from lekarstva;
 ![image](https://github.com/user-attachments/assets/2ed03c35-e91a-46dc-af04-cf215d5188fb)
+![image](https://github.com/user-attachments/assets/5f26d87b-0834-49b3-9692-3fe3eafe4a02)
 
 
 ## УДАЛИТЬ ТАБЛИЦУ
