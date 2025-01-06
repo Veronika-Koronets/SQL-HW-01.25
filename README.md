@@ -47,11 +47,14 @@ SELECT * from lekarstva;
 
 ### удалить колонку
 ```
-ALTER table lekarstva drop number;
+ALTER table lekarstva drop number; --удалить колонку ``number``
 ```
 ```
 SELECT * from lekarstva;
 ```
+![image](https://github.com/user-attachments/assets/19593fc5-f586-4ee4-bffc-e7c0b39b545a)
+
+
 ###переименовать колонку
 ```
 alter table lekarstva rename column lek_forma to forma;
