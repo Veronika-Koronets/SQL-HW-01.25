@@ -37,7 +37,7 @@ SELECT * from lekarstva;
 
 ## ИЗМЕНИТЬ СТРУКТУРУ ТАБЛИЦЫ
 
-### добавить новую колонку "seriya"
+1) ### добавить новую колонку "seriya"
 ```
 ALTER TABLE lekarstva add seriya char(25);
 ```
@@ -46,7 +46,7 @@ SELECT * from lekarstva;
 ```
 ![image](https://github.com/user-attachments/assets/4892a71c-dbb3-49fe-85c7-b485a9f19a19)
 
-### удалить колонку
+2) ### удалить колонку
 ```
 ALTER table lekarstva drop number; --удалить колонку ``number``
 ```
@@ -56,7 +56,7 @@ SELECT * from lekarstva;
 ![image](https://github.com/user-attachments/assets/19593fc5-f586-4ee4-bffc-e7c0b39b545a)
 
 
-### переименовать колонку
+3) ### переименовать колонку
 ```
 alter table lekarstva rename column lek_forma to forma;
 ```
@@ -66,7 +66,7 @@ SELECT * from lekarstva;
 ![image](https://github.com/user-attachments/assets/ad24fd4a-4e53-4a0a-b30a-66657cf01057)
 
 
-### изменить тип данных
+4) ### изменить тип данных
 !!! after the request was completed it was muted
 ```
 alter TABLE lekarstva modify id char(25);
@@ -86,6 +86,7 @@ describe lekarstva;
 
 
 ## ДОБАВИТЬ ДАННЫЕ
+1)
 ```
 insert into lekarstva VALUES (11, 'loperamid', 'kapsuly', 'Borisov', 12, 'SW020324');
 ```
@@ -95,6 +96,7 @@ SELECT * from lekarstva;
 ![image](https://github.com/user-attachments/assets/cc375158-9f63-4539-9349-c3442aaf8517)
 ![image](https://github.com/user-attachments/assets/331d00cf-f84d-4b07-9b46-05cc8fd8ffce)
 
+2)
 ```
 INSERT INTO lekarstva (id, forma) VALUES (12, 'ampuly'), (13, 'kapsuly');
 ```
@@ -130,6 +132,7 @@ SELECT * from lekarstva;
 changed string where id=6
 
 ## УДАЛИТЬ ДАННЫЕ
+1)
 ```
 DELETE FROM lekarstva where seriya is NULL;
 ```
@@ -138,7 +141,7 @@ SELECT * from lekarstva;
 ```
 ![image](https://github.com/user-attachments/assets/0bcee47a-8ec0-4c48-8686-e14dc6b3ee0f)
 
-
+2)
 ```
 DELETE FROM lekarstva where price >100;
 ```
@@ -148,7 +151,10 @@ SELECT * from lekarstva;
 ![image](https://github.com/user-attachments/assets/e54f5b7c-5712-42fd-b8e9-37948c572a47)
 
 ## ВЫБОРКИ
-##SELECT name, forma from lekarstva;
+1)
+```
+SELECT name, forma from lekarstva;
+```
 
 ##вывеcти уникальные имена проихводителей
 ##select DISTINCT producer from lekarstva;
