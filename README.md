@@ -81,17 +81,28 @@ describe lekarstva;
 ![image](https://github.com/user-attachments/assets/6e0f2c41-7f9d-41f6-a967-ec12524e58d2)
 
 ## ДОБАВИТЬ ДАННЫЕ
+```
 insert into lekarstva VALUES (11, 'loperamid', 'kapsuly', 'Borisov', 12, 'SW020324');
+```
+```
 INSERT INTO lekarstva (id, forma) VALUES (12, 'ampuly'), (13, 'kapsuly');
+```
 
 ## ИЗМЕНИТЬ ДАННЫЕ
+```
 UPDATE lekarstva set forma='poroshok' where price =130;
+```
 UPDATE lekarstva set seriya='14052024' where forma='tabletky' and producer='BioPharma';
+```
 
 ## УДАЛИТЬ ДАННЫЕ
-##DELETE FROM lekarstva where seriya is NULL;
-##DELETE FROM lekarstva where price >100;
+```
+DELETE FROM lekarstva where seriya is NULL;
+```
 
+```
+DELETE FROM lekarstva where price >100;
+```
 ## ВЫБОРКИ
 ##SELECT name, forma from lekarstva;
 
