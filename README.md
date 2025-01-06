@@ -124,16 +124,24 @@ SELECT * from lekarstva;
 ![image](https://github.com/user-attachments/assets/7eadb009-fce3-42d6-a6c5-13b984d82ee4)
 ![image](https://github.com/user-attachments/assets/c14c637a-d24d-4f8a-933d-003113500ad5)
 
-
 changed string where id=6
+
 ## УДАЛИТЬ ДАННЫЕ
 ```
 DELETE FROM lekarstva where seriya is NULL;
 ```
+```
+SELECT * from lekarstva;
+```
+
 
 ```
 DELETE FROM lekarstva where price >100;
 ```
+```
+SELECT * from lekarstva;
+```
+
 ## ВЫБОРКИ
 ##SELECT name, forma from lekarstva;
 
