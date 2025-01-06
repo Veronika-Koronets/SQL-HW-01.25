@@ -133,6 +133,7 @@ changed string where id=6
 
 ## УДАЛИТЬ ДАННЫЕ
 !!! after these requests were executed, they were muted
+
 1)
 ```
 DELETE FROM lekarstva where seriya is NULL;
