@@ -142,6 +142,7 @@ DELETE FROM lekarstva where price >100;
 ```
 SELECT * from lekarstva;
 ```
+![image](https://github.com/user-attachments/assets/e54f5b7c-5712-42fd-b8e9-37948c572a47)
 
 ## ВЫБОРКИ
 ##SELECT name, forma from lekarstva;
