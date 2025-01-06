@@ -116,6 +116,7 @@ SELECT * from lekarstva;
 ![image](https://github.com/user-attachments/assets/a0ff8fb9-b826-4fde-8ed7-f7505ae1e264)
 
 changed string where id=8
+
 2)
 ```
 UPDATE lekarstva set seriya='14052024' where forma='tabletky' and producer='BioPharma';
