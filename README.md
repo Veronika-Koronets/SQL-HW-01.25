@@ -134,7 +134,7 @@ changed string where id=6
 ## УДАЛИТЬ ДАННЫЕ
 !!! after these requests were executed, they were muted
 
-1)
+## 1)
 ```
 DELETE FROM lekarstva where seriya is NULL;
 ```
@@ -143,7 +143,7 @@ SELECT * from lekarstva;
 ```
 ![image](https://github.com/user-attachments/assets/0bcee47a-8ec0-4c48-8686-e14dc6b3ee0f)
 
-2)
+## 2)
 ```
 DELETE FROM lekarstva where price >100;
 ```
