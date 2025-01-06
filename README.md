@@ -154,7 +154,8 @@ SELECT * from lekarstva;
 
 ## ВЫБОРКИ
 !!! these requests were made separately, not consecutively
-1) вывести колонки "name" и "forma":
+
+## 1) вывести колонки "name" и "forma":
 ```
 SELECT name, forma from lekarstva;
 ```
