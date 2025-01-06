@@ -55,13 +55,15 @@ SELECT * from lekarstva;
 ![image](https://github.com/user-attachments/assets/19593fc5-f586-4ee4-bffc-e7c0b39b545a)
 
 
-###переименовать колонку
+### переименовать колонку
 ```
 alter table lekarstva rename column lek_forma to forma;
 ```
 ```
 SELECT * from lekarstva;
 ```
+![image](https://github.com/user-attachments/assets/ad24fd4a-4e53-4a0a-b30a-66657cf01057)
+
 
 ### изменить тип данных
 ```
