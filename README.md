@@ -37,7 +37,7 @@ SELECT * from lekarstva;
 
 ## ИЗМЕНИТЬ СТРУКТУРУ ТАБЛИЦЫ
 
-1) ### добавить новую колонку "seriya"
+### 1) добавить новую колонку "seriya"
 ```
 ALTER TABLE lekarstva add seriya char(25);
 ```
@@ -46,7 +46,7 @@ SELECT * from lekarstva;
 ```
 ![image](https://github.com/user-attachments/assets/4892a71c-dbb3-49fe-85c7-b485a9f19a19)
 
-2) ### удалить колонку
+### 2) удалить колонку
 ```
 ALTER table lekarstva drop number; --удалить колонку ``number``
 ```
@@ -56,7 +56,7 @@ SELECT * from lekarstva;
 ![image](https://github.com/user-attachments/assets/19593fc5-f586-4ee4-bffc-e7c0b39b545a)
 
 
-3) ### переименовать колонку
+### 3) переименовать колонку
 ```
 alter table lekarstva rename column lek_forma to forma;
 ```
@@ -66,7 +66,7 @@ SELECT * from lekarstva;
 ![image](https://github.com/user-attachments/assets/ad24fd4a-4e53-4a0a-b30a-66657cf01057)
 
 
-4) ### изменить тип данных
+### 4) изменить тип данных
 !!! after the request was completed it was muted
 ```
 alter TABLE lekarstva modify id char(25);
@@ -151,21 +151,28 @@ SELECT * from lekarstva;
 ![image](https://github.com/user-attachments/assets/e54f5b7c-5712-42fd-b8e9-37948c572a47)
 
 ## ВЫБОРКИ
-1)
+1) вывести колонки "name" и "forma":
 ```
 SELECT name, forma from lekarstva;
 ```
 
-##вывеcти уникальные имена проихводителей
-##select DISTINCT producer from lekarstva;
+## 2) вывеcти уникальные имена проихводителей:
+```
+select DISTINCT producer from lekarstva;
+```
 
-##вывести препараты где в названии есть "l"
-##SELECT name from lekarstva where name like '%l%'; 
+## 3) вывести препараты где в названии есть "l":
+```
+SELECT name from lekarstva where name like '%l%'; 
+```
 
-##вывести строки по увеличению цены
-##SELECT * FROM lekarstva order by price;
+## 4) вывести строки по увеличению цены:
+```
+SELECT * FROM lekarstva order by price;
+```
 
-##вывести строки где серия не NULL
-##SELECT * from lekarstva where seriya is NOT null;
-
+## 5) вывести строки где серия не NULL:
+```
+SELECT * from lekarstva where seriya is NOT null;
+```
 
