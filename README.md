@@ -170,14 +170,18 @@ select DISTINCT producer from lekarstva;
 ```
 SELECT name from lekarstva where name like '%l%'; 
 ```
+![image](https://github.com/user-attachments/assets/4f72b6fd-4442-415f-8f6c-4d44616df000)
 
 ## 4) вывести строки по увеличению цены:
 ```
 SELECT * FROM lekarstva order by price;
 ```
+![image](https://github.com/user-attachments/assets/51d893b4-c18e-4b1c-a992-b65091eca643)
+![image](https://github.com/user-attachments/assets/2473fc12-3acf-4682-b684-3b110e5a1431)
 
 ## 5) вывести строки где серия не NULL:
 ```
 SELECT * from lekarstva where seriya is NOT null;
 ```
+![image](https://github.com/user-attachments/assets/5fe7882e-776a-4662-b95e-6fce1c06a7a7)
 
