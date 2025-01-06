@@ -105,6 +105,7 @@ SELECT * from lekarstva;
 ![image](https://github.com/user-attachments/assets/c8443da3-7e35-4156-b09b-6d3692057698)
 
 ## ИЗМЕНИТЬ ДАННЫЕ
+1)
 ```
 UPDATE lekarstva set forma='poroshok' where price =130;
 ```
@@ -115,6 +116,7 @@ SELECT * from lekarstva;
 ![image](https://github.com/user-attachments/assets/a0ff8fb9-b826-4fde-8ed7-f7505ae1e264)
 
 changed string where id=8
+2)
 ```
 UPDATE lekarstva set seriya='14052024' where forma='tabletky' and producer='BioPharma';
 ```
