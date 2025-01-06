@@ -90,7 +90,16 @@ describe lekarstva;
 insert into lekarstva VALUES (11, 'loperamid', 'kapsuly', 'Borisov', 12, 'SW020324');
 ```
 ```
+SELECT * from lekarstva;
+```
+![image](https://github.com/user-attachments/assets/cc375158-9f63-4539-9349-c3442aaf8517)
+![image](https://github.com/user-attachments/assets/331d00cf-f84d-4b07-9b46-05cc8fd8ffce)
+
+```
 INSERT INTO lekarstva (id, forma) VALUES (12, 'ampuly'), (13, 'kapsuly');
+```
+```
+SELECT * from lekarstva;
 ```
 
 ## ИЗМЕНИТЬ ДАННЫЕ
