@@ -152,6 +152,7 @@ SELECT * from lekarstva;
 ![image](https://github.com/user-attachments/assets/e54f5b7c-5712-42fd-b8e9-37948c572a47)
 
 ## ВЫБОРКИ
+!!! these requests were made separately, not consecutively
 1) вывести колонки "name" и "forma":
 ```
 SELECT name, forma from lekarstva;
