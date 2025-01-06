@@ -132,6 +132,7 @@ SELECT * from lekarstva;
 changed string where id=6
 
 ## УДАЛИТЬ ДАННЫЕ
+!!! after these requests were executed, they were muted
 1)
 ```
 DELETE FROM lekarstva where seriya is NULL;
@@ -155,13 +156,14 @@ SELECT * from lekarstva;
 ```
 SELECT name, forma from lekarstva;
 ```
+![image](https://github.com/user-attachments/assets/0c45ba42-b4e6-4a50-a2b7-0d9089d84592)
 
 ## 2) вывеcти уникальные имена проихводителей:
 ```
 select DISTINCT producer from lekarstva;
 ```
 
-## 3) вывести препараты где в названии есть "l":
+## 3) вывести препараты где в названии есть буква "l":
 ```
 SELECT name from lekarstva where name like '%l%'; 
 ```
