@@ -24,6 +24,7 @@ SELECT * from lekarstva;
 
 
 ## УДАЛИТЬ ТАБЛИЦУ
+!!! after the request was completed it was muted
 ```
 drop table lekarstva;
 ```
@@ -66,6 +67,7 @@ SELECT * from lekarstva;
 
 
 ### изменить тип данных
+!!! after the request was completed it was muted
 ```
 alter TABLE lekarstva modify id char(25);
 ```
@@ -76,6 +78,7 @@ SELECT * from lekarstva;
 
 
 ### посмотреть тип данных 
+! to make sure that the data type has been changed, we will run another query
 ```
 describe lekarstva;
 ```
