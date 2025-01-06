@@ -101,6 +101,8 @@ INSERT INTO lekarstva (id, forma) VALUES (12, 'ampuly'), (13, 'kapsuly');
 ```
 SELECT * from lekarstva;
 ```
+![image](https://github.com/user-attachments/assets/cc375158-9f63-4539-9349-c3442aaf8517)
+![image](https://github.com/user-attachments/assets/c8443da3-7e35-4156-b09b-6d3692057698)
 
 ## ИЗМЕНИТЬ ДАННЫЕ
 ```
