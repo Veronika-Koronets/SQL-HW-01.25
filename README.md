@@ -163,6 +163,8 @@ SELECT name, forma from lekarstva;
 ```
 select DISTINCT producer from lekarstva;
 ```
+![image](https://github.com/user-attachments/assets/a655bb4f-c5a7-4d2b-9288-aa943304a385)
+![image](https://github.com/user-attachments/assets/a562e353-5819-411b-97dc-cb6904974602)
 
 ## 3) вывести препараты где в названии есть буква "l":
 ```
