@@ -72,13 +72,15 @@ alter TABLE lekarstva modify id char(25);
 ```
 SELECT * from lekarstva;
 ```
-![image](https://github.com/user-attachments/assets/95e4d52d-1462-4232-8cdb-466522435a21)
+![image](https://github.com/user-attachments/assets/04652239-dd1d-4b9b-a092-3715a23ebca0)
+
 
 ### посмотреть тип данных 
 ```
 describe lekarstva;
 ```
-![image](https://github.com/user-attachments/assets/6e0f2c41-7f9d-41f6-a967-ec12524e58d2)
+![image](https://github.com/user-attachments/assets/a64b9ba6-6598-45df-95d4-7ea6c12b0ef0)
+
 
 ## ДОБАВИТЬ ДАННЫЕ
 ```
