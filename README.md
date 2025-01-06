@@ -157,6 +157,7 @@ SELECT * from lekarstva;
 SELECT name, forma from lekarstva;
 ```
 ![image](https://github.com/user-attachments/assets/0c45ba42-b4e6-4a50-a2b7-0d9089d84592)
+![image](https://github.com/user-attachments/assets/934573a8-77a9-47b2-9e82-0ec8253a819e)
 
 ## 2) вывеcти уникальные имена проихводителей:
 ```
