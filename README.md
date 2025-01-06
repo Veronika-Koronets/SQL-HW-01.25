@@ -37,7 +37,7 @@ SELECT * from lekarstva;
 
 ## ИЗМЕНИТЬ СТРУКТУРУ ТАБЛИЦЫ
 
-### 1) добавить новую колонку "seriya"
+## 1) добавить новую колонку "seriya"
 ```
 ALTER TABLE lekarstva add seriya char(25);
 ```
@@ -46,7 +46,7 @@ SELECT * from lekarstva;
 ```
 ![image](https://github.com/user-attachments/assets/4892a71c-dbb3-49fe-85c7-b485a9f19a19)
 
-### 2) удалить колонку
+## 2) удалить колонку
 ```
 ALTER table lekarstva drop number; --удалить колонку ``number``
 ```
@@ -56,7 +56,7 @@ SELECT * from lekarstva;
 ![image](https://github.com/user-attachments/assets/19593fc5-f586-4ee4-bffc-e7c0b39b545a)
 
 
-### 3) переименовать колонку
+## 3) переименовать колонку
 ```
 alter table lekarstva rename column lek_forma to forma;
 ```
@@ -66,7 +66,7 @@ SELECT * from lekarstva;
 ![image](https://github.com/user-attachments/assets/ad24fd4a-4e53-4a0a-b30a-66657cf01057)
 
 
-### 4) изменить тип данных
+## 4) изменить тип данных
 !!! after the request was completed it was muted
 ```
 alter TABLE lekarstva modify id char(25);
@@ -77,7 +77,7 @@ SELECT * from lekarstva;
 ![image](https://github.com/user-attachments/assets/04652239-dd1d-4b9b-a092-3715a23ebca0)
 
 
-### посмотреть тип данных 
+## посмотреть тип данных 
 ! to make sure that the data type has been changed, we will run another query
 ```
 describe lekarstva;
@@ -86,7 +86,7 @@ describe lekarstva;
 
 
 ## ДОБАВИТЬ ДАННЫЕ
-1)
+## 1)
 ```
 insert into lekarstva VALUES (11, 'loperamid', 'kapsuly', 'Borisov', 12, 'SW020324');
 ```
@@ -96,7 +96,7 @@ SELECT * from lekarstva;
 ![image](https://github.com/user-attachments/assets/cc375158-9f63-4539-9349-c3442aaf8517)
 ![image](https://github.com/user-attachments/assets/331d00cf-f84d-4b07-9b46-05cc8fd8ffce)
 
-2)
+## 2)
 ```
 INSERT INTO lekarstva (id, forma) VALUES (12, 'ampuly'), (13, 'kapsuly');
 ```
@@ -107,7 +107,7 @@ SELECT * from lekarstva;
 ![image](https://github.com/user-attachments/assets/c8443da3-7e35-4156-b09b-6d3692057698)
 
 ## ИЗМЕНИТЬ ДАННЫЕ
-1)
+## 1)
 ```
 UPDATE lekarstva set forma='poroshok' where price =130;
 ```
@@ -119,7 +119,7 @@ SELECT * from lekarstva;
 
 changed string where id=8
 
-2)
+## 2)
 ```
 UPDATE lekarstva set seriya='14052024' where forma='tabletky' and producer='BioPharma';
 ```
