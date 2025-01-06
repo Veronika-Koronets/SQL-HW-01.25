@@ -69,10 +69,16 @@ SELECT * from lekarstva;
 ```
 alter TABLE lekarstva modify id char(25);
 ```
-
-###посмотреть тип данных 
-```describe lekarstva;
 ```
+SELECT * from lekarstva;
+```
+![image](https://github.com/user-attachments/assets/95e4d52d-1462-4232-8cdb-466522435a21)
+
+### посмотреть тип данных 
+```
+describe lekarstva;
+```
+![image](https://github.com/user-attachments/assets/6e0f2c41-7f9d-41f6-a967-ec12524e58d2)
 
 ## ДОБАВИТЬ ДАННЫЕ
 insert into lekarstva VALUES (11, 'loperamid', 'kapsuly', 'Borisov', 12, 'SW020324');
