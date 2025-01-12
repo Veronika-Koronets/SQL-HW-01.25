@@ -1,0 +1,19 @@
+## SQL HW 12.01.25
+
+```
+CREATE TABLE users (
+       id INT AUTO_INCREMENT PRIMARY KEY,
+       username VARCHAR(50) NOT NULL,
+       email VARCHAR(100) NOT NULL,
+       created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+       age INT,
+       sex char(10));
+
+INSERT INTO users (username, email, age, sex) VALUES
+('john_doe', 'john@mail.ru', 25, 'male'),
+('jane_doe', 'jane_doe@gmail.com', 40, 'female'),
+('alice_smith', 'alice@example.com', 31, 'female'),
+('bob_brown', 'bob@example.com', 19, NULL),  
+('charlie_johnson', 'charlie@yandex.ru',53, 'male');
+```
+
