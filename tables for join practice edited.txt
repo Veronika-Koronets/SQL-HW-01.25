@@ -1,0 +1,82 @@
+CREATE TABLE Students (
+  id_students INT,
+  Name CHAR(0),
+  Surname CHAR(25),
+  Age INT,
+  Login CHAR(25),
+  Password CHAR(25),
+  Email CHAR(25),
+  PRIMARY KEY (id_students)
+);
+
+CREATE TABLE addresses (
+  students_id INT,
+  street VARCHAR(30) NOT NULL,
+  city VARCHAR(30) NOT NULL,
+  state VARCHAR(30) NOT NULL,
+  PRIMARY KEY (students_id),
+  FOREIGN KEY (students_id) REFERENCES Students (id_students) ON DELETE CASCADE --references означает к какой таблице и на какое поле он будет ссылаться
+);
+
+CREATE TABLE ContactInfo ( 
+  students_id INT, 
+  phone_number CHAR(15), 
+  emergency_contact_name CHAR(30), 
+  emergency_contact_phone CHAR(15), 
+  PRIMARY KEY (students_id),
+  FOREIGN KEY (students_id) REFERENCES addresses (students_id) ON DELETE CASCADE );
+
+INSERT INTO Students (id_students, Name, Surname, Age, Login, Password, Email) VALUES
+(1, '', 'Brown', 32, 'LogNick', '12pass', 'nick@gmail.com'),
+(2, '', 'Tobler', 26, 'SunF', '12qwerty', 'sunF@mail.ru'),
+(3, '', 'Brown', 28, 'Katitty', '4test*12', 'KateBrown@mail.ru'),
+(4, '', 'Bonner', 21, 'FlQSt', '12qweq', 'BonNick@yandex.ru'),
+(5, '', 'Boyer', 40, 'preSTOM', '4test*12', 'preSTOM@ya.ru'),
+(6, '', 'Lord', 26, 'nutt7', '2floppynut', 'lord@gmail.com');
+
+INSERT INTO addresses (students_id, street, city, state) VALUES
+(1, 'Pushkina', 'Minsk', 'Minsk Oblast'),
+(2, 'Olshevskogo', 'Minsk', 'Minsk Oblast'),
+(3, 'Kolasa', 'Smorgon', 'Grodno Oblast'),
+(4, 'Narodnaya', 'Baranovich', 'Brest Oblast'),
+(5, 'Manevicha', 'Gomel', 'Gomel Oblast'),
+(6, 'Bluhera', 'Borisov', 'Minsk Oblast');
+
+select students.name, students.surname, addresses.city from students
+join addresses
+on students.id_students = addresses.students_id;
+
+select std.name as StudentName, std.surname as StudentSurname, address.city from students std
+join addresses adr
+on std.id_students = adr.students_id;
+
+
+---(вывести id как hello, surname как olleh и state как lloeh из таблиц Students, addresses)
+
+select students.id_students as hello, students.surname as olleh, addresses.state as lloeh from students
+join addresses
+on students.id_students=addresses.students_id
+
+
+INSERT INTO ContactInfo (students_id, phone_number, emergency_contact_name, emergency_contact_phone) VALUES
+(1, '37529', 'Mama', '37544'),
+(2, '37544', 'Papa', '37529'),
+(3, '37529', 'Brat', '37544'),
+(4, '37544', 'Sestra', '37529'),
+(5, '37529', 'Babushka', '37544'),
+(6, '37544', 'Dedushka', '37529');
+
+---(вывести name и emergency_contact_name from все таблицы. т.к. ContactInfo связана только с таблицей addresses надо сделать доп.join) 
+
+select Student.name, ContactInfo.emergency_contact_name from students
+join addresses
+on students.id_students=addresses.students_id
+join ContactInfo
+on addresses.students_id=ContactInfo.students_id
+
+
+---(добавить в 1-ю таблицу колонку birthday_date)
+alter table students add birthday_date DATE;
+
+---(удалить этот столбец)
+ALTER TABLE Students DROP birthday_date;
