@@ -30,11 +30,30 @@ on cls.id=sic.class
 join student std
 sic.student=std.id
 ```
-### 4.
+### 4. Вывести middle_name(teacher), date(schedule) и address(student)
 ```
-
+SELECT tch.middle_name, sch.date, std.address
+from schedule sch
+join teacher tch
+on sch.teacher=tch.id
+join class cls
+on sch.class=cls.id
+join student_in_class sic
+on cls.id=sic.class
+join student std
+on sic.student=std.id
 ```
-### 5.
+### 5. Вывести first_name(student) и first_name(teacher)
 ```
-
+select std.first_name, tch.first_name
+from class cls
+join student_in_class sic
+on cls.id=sic.class
+join student std
+on sic.student=std.id
+join schedule sch
+on cls.id=sch.class
+join teacher tch
+on sch.teacher=tch.id
 ```
+(отработает ли последний запрос?)
