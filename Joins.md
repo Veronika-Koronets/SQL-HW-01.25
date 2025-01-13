@@ -57,3 +57,24 @@ join teacher tch
 on sch.teacher=tch.id
 ```
 (отработает ли последний запрос?)
+
+## Ниже - примеры с занятия:
+### 1. Вывести учителя и фамилию ученика
+```
+select sch.teacher, std.last_name from schedule sch
+join class cls
+on sch.class=cls.id 
+join student_in_class sic
+on cls.id=sic.class
+join student std
+on sic.student=std.id
+```
+### 2. Вывести name из Class и first_name из teacher
+(from schedule т.к. Class и teacher между собой не связаны и так будет проще)
+```
+select name, first_name from schedule sch
+join class cls
+on sch.class=cls.name
+join teacher tch
+on sch.teacher=tch.id
+```
