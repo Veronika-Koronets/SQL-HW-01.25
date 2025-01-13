@@ -14,9 +14,27 @@ on cls.id=sic.cls
 ```
 ### 2. Вывести start_pair(timepair), name of subject(subject) и teacher(schedule)
 ```
-select timepair.start_pair, subject.name, schedule.teacher from schedule sch
+select timepair.start_pair, subject.name, schedule.teacher
+from schedule sch
 join timepair tmp
 on sch.numper_pair=tmp.id
 join subject sbj
 on sch.subject=sbj.id
+```
+### 3. Вывести name(class) и last_name(student)
+```
+SELECT cls.name, std.last_name
+from class cls
+join student_in_class sic
+on cls.id=sic.class
+join student std
+sic.student=std.id
+```
+### 4.
+```
+
+```
+### 5.
+```
+
 ```
